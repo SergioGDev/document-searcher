@@ -54,6 +54,6 @@ To manage the components, I've create a simple structure. We have the folders:
 Like we said before, we've used the *store* to manage de *filterObject*. Each time a filter input change, the *filterObject* will be updated. When this happens, the *documentList* will be updated using the filters.
 
 ### Deploy on Netlify
-The app is deployed on the site: (https://document-search-sgarciah.netlify.app/).
+The app is deployed on the site: https://document-search-sgarciah.netlify.app/
 
 It's linked to this repository and when I push my changes they are automatically deployed to the Netlify environment.
