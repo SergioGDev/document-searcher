@@ -21,6 +21,7 @@ export const SelectBase = ({ label, name, options }: SelectBaseProps) => {
         defaultValue={value}
         value={value}
         onChange={handleOnChange}
+        MenuProps={{ PaperProps: {sx: { maxHeight: '300px' }} }}
       >
         {options.map((option) => (
           <MenuItem key={option.value} value={option.value}>
