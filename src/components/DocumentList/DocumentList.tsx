@@ -1,16 +1,12 @@
-import { useMemo } from "react";
-
-import { useSelector } from "react-redux";
 import { Grid, Typography } from "@mui/material";
 
-import { RootState } from "../../store/store";
 import { DocumentData } from '../../types/types';
 import { DocumentItemList } from "./DocumentItemList";
-import { getDocumentListFiltered } from "../../functions/documentsListFiltered";
+import { useDocumentListFiltered } from "../../hooks/useDocumentListFiltered";
 
 export const DocumentList = () => {
-  const { filterObject } = useSelector((state: RootState) => state.filter);
-  const filterList = useMemo(() => getDocumentListFiltered(filterObject), [filterObject])
+  
+  const {filterList} = useDocumentListFiltered();
   
   return (
     <Grid

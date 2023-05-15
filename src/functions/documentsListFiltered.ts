@@ -5,7 +5,7 @@ import { DocumentData, FILTER_INPUT, FILTER_SELECT, StringMap } from '../types/t
 export const getDocumentListFiltered = (filterObject: StringMap) => {
     // If we dont have filters, we'll return the complete list.
     if (Object.keys(filterObject).length === 0) return documentList;
-
+    
     let filterList = documentList;
     Object.keys(filterObject).forEach( (key: string) => {
       const keyDocument = key.replace('FilterSelect', '').replace('FilterInput', '');
