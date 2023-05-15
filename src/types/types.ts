@@ -29,11 +29,6 @@ export interface StringMap {
 }
 
 // FILTERS //
-// Add here the name of the selects
-// export const SELECT_COUNTRY_FILTER = 'countryFilterSelect';
-// export const SELECT_VERSION_FILTER = 'versionFilterSelect';
-// export const INPUT_FINDER_FILTER = 'textFilterInput';
-
 export const FILTER_SELECT = 'FilterSelect';
 export const FILTER_INPUT = 'FilterInput';
 
